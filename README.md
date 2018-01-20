@@ -1,2 +1,2 @@
 # Joy
-A clean and colourful beamer theme
+A delightfully clean and colourful beamer theme

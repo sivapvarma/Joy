@@ -1,0 +1,136 @@
+% Copyright 2018 by Siva Prasad Varma Chiluvuri
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU General Public License v3
+%
+
+\ProvidesPackage{beamerthemeJoy}
+
+\mode<presentation>
+\definecolor{sectionColor}{RGB}{255,255,255}
+\definecolor{subsectionColor}{RGB}{0,0,102}
+\definecolor{sectionTextColor}{RGB}{0,0,0}
+\definecolor{subsectionTextColor}{RGB}{255,255,255}
+\definecolor{leftFootlineColor}{RGB}{130,36,51}
+\definecolor{middleFootlineColor}{RGB}{130,36,51}
+\definecolor{rightFootlineColor}{RGB}{130,36,51}
+\definecolor{authorColor}{RGB}{255,255,255}
+\definecolor{footlineTitleColor}{RGB}{255,255,255}
+\definecolor{instituteColor}{RGB}{255,255,255}
+\definecolor{dateColor}{RGB}{255,255,255}
+\definecolor{pageColor}{RGB}{255,255,255}
+\definecolor{titleColor}{RGB}{255,255,255}
+\definecolor{titleTextColor}{RGB}{130,36,51}
+\definecolor{bodyColor}{RGB}{255,255,255}
+\definecolor{normalTextColor}{RGB}{0,0,0}
+\definecolor{exampleTextColor}{RGB}{51,153,51}
+\definecolor{alertTextColor}{RGB}{204,51,51}
+\definecolor{chipColor}{RGB}{0,0,102}
+\definecolor{chipTextColor}{RGB}{255,255,255}
+\definecolor{normalBlockColor}{RGB}{255,255,255}
+\definecolor{normalTitleBlockColor}{RGB}{50,50,175}
+% \definecolor{normalTitleBlockColor}{RGB}{50,50,175}
+\definecolor{normalBlockTextColor}{RGB}{0,0,0}
+\definecolor{normalBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockColor}{RGB}{0,204,0}
+\definecolor{exampleTitleBlockColor}{RGB}{0,153,0}
+\definecolor{exampleBlockTextColor}{RGB}{255,255,255}
+\definecolor{exampleBlockTitleTextColor}{RGB}{255,255,255}
+% \definecolor{alertBlockColor}{RGB}{255,153,153}
+% \definecolor{alertTitleBlockColor}{RGB}{204,51,51}
+% \definecolor{alertBlockTextColor}{RGB}{255,255,255}
+% \definecolor{alertBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockColor}{RGB}{50,50,175}
+\definecolor{alertTitleBlockColor}{RGB}{50,50,175}
+\definecolor{alertBlockTextColor}{RGB}{255,255,255}
+\definecolor{alertBlockTitleTextColor}{RGB}{255,255,255}
+\definecolor{myblue}{RGB}{50,50,175}
+\definecolor{myred}{RGB}{195,5,20}
+\definecolor{mygreen}{RGB}{20,150,20}
+\definecolor{mybrown}{RGB}{176,2,14}
+\definecolor{mybrightblue}{RGB}{5,25,205}
+\definecolor{myredshade}{RGB}{250,200,200}
+
+\setbeamercolor{section in head/foot}{bg=sectionColor, fg=sectionTextColor}
+\setbeamercolor{subsection in head/foot}{bg=subsectionColor, fg=subsectionTextColor}
+% \setbeamercolor*{block title}{fg=normalBlockTitleTextColor,bg=normalTitleBlockColor}
+% \setbeamercolor*{block body}{fg=normalBlockTextColor,bg=normalBlockColor}
+% \setbeamercolor*{block title alerted}{fg=alertBlockTitleTextColor,bg=alertTitleBlockColor}
+% \setbeamercolor*{block body alerted}{fg=alertBlockTextColor,bg=alertBlockColor}
+% \setbeamercolor*{block title example}{fg=exampleBlockTitleTextColor,bg=exampleTitleBlockColor}
+% \setbeamercolor*{block body example}{fg=exampleBlockTextColor,bg=exampleBlockColor}
+\setbeamercolor*{block title}{fg=normalBlockTitleTextColor,bg=normalTitleBlockColor}
+\setbeamercolor*{block body}{fg=normalBlockTextColor,bg=normalBlockColor}
+\setbeamercolor*{block title alerted}{fg=alertBlockTitleTextColor,bg=alertTitleBlockColor}
+\setbeamercolor*{block body alerted}{fg=alertBlockTextColor,bg=alertBlockColor}
+\setbeamercolor*{block title example}{fg=exampleBlockTitleTextColor,bg=exampleTitleBlockColor}
+\setbeamercolor*{block body example}{fg=exampleBlockTextColor,bg=exampleBlockColor}
+
+\setbeamerfont{block title}{size={}}
+%\setbeamercolor{titlelike}{fg=titleTextColor,bg=titleColor}
+\setbeamercolor{titlelike}{fg=myblue,bg=titleColor}
+\setbeamercolor*{normal text}{fg=normalTextColor,bg=bodyColor}
+\setbeamercolor*{example text}{fg=exampleTextColor}
+\setbeamercolor*{alerted text}{fg=alertTextColor}
+
+\useinnertheme{rounded}
+% \setbeamercolor{item projected}{bg=chipColor,fg=chipTextColor}
+\setbeamercolor{author in head/foot}{bg=leftFootlineColor, fg=authorColor}
+\setbeamercolor{title in head/foot}{bg=middleFootlineColor, fg=footlineTitleColor}
+\setbeamercolor{institute in head/foot}{fg=instituteColor}
+\setbeamercolor{date in head/foot}{bg=rightFootlineColor, fg=dateColor}
+
+
+% Customize bullets
+\setbeamertemplate{itemize items}[circle]  % make them cleam like SD
+% color of itemize and eumerate bullets
+% \setbeamercolor*{item projected}{bg=titleTextColor, fg=chipTextColor}
+\setbeamercolor*{item projected}{bg=myblue, fg=chipTextColor}
+% color of text in table of contents or outline slide
+%\setbeamercolor{section in toc}{fg=titleTextColor}
+\setbeamercolor{section in toc}{fg=mybrightblue}
+\setbeamercolor{subsection in toc}{fg=titleTextColor}
+
+%\defbeamertemplate*{footline}{infolines theme}
+%{
+%\leavevmode%
+%\hbox{%
+%\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+%\usebeamerfont{author in head/foot}\insertshortauthor~~
+%\end{beamercolorbox}%
+%\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+%\usebeamerfont{title in head/foot}\insertshorttitle
+%\end{beamercolorbox}%
+%\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+%\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+%\end{beamercolorbox}
+%}%
+%\vskip0pt%
+%}
+
+%% TEXSX - http://tex.stackexchange.com/a/113365/9609
+\usefonttheme{structurebold}
+\setbeamerfont{title}{series=\bfseries,parent=structure}
+\setbeamerfont{subtitle}{size=\scriptsize,series=\bfseries,parent=structure}
+% \setbeamerfont{author}{size=\scriptsize,series=\bfseries,parent=structure}
+%\setbeamerfont{institute}{size=\scriptsize,series=\bfseries,parent=structure}
+%\setbeamerfont{date}{size=\scriptsize,series=\bfseries,parent=structure}
+
+% make slide titles bold
+\setbeamerfont{frametitle}{series=\bfseries}
+
+
+% \setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{blocks}[rounded][shadow=false]
+%\setbeamercolor*{title}{use=structure,fg=white,bg=structure.fg,}
+\setbeamercolor*{title}{use=structure,fg=myred,bg=myredshade,}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=false]
+
+% remove navigation symbols
+%\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]{}
+\mode<all>
